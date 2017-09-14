@@ -358,7 +358,7 @@ $(function() {
 		var $handlers = $('.acordeon-link');
 		$handlers.click(function(e) {
 			e.preventDefault();
-			alert(e.target);
+			alert(e.target.className);
 			var $currentItem = $(this).closest('.acordeon-item');
 			if($currentItem.hasClass('sidebar-menu__item-with-ul')){
 			$currentItem.find('.acordeon-sublist')
